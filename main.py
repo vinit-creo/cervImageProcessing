@@ -1,9 +1,12 @@
 import cv2
 from matplotlib import pyplot as plt
+import torch
+from PIL import Image
+import torchvision.transforms as transforms
 
 
 
-img = cv2.imread("/Users/vinit/Downloads/experiment_media/image_2.jpg")
+img = cv2.imread("assets/image1.jpg")
 
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
